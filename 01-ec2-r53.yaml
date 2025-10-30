@@ -6,11 +6,12 @@
     sg_id: sg-07d348ec05a0a4de8  # replace with your security group
     zone_id: "Z010021512LXKVZRADNTG" # replace with your hosted zone
     domain_name: "daws96s.fun"
-    instance:
-    - mongodb
-    - redis
-    - mysql
-    - rabbitmq
+    # we can pass instances through command line using -e 
+    # instance:
+    # - mongodb
+    # - redis
+    # - mysql
+    # - rabbitmq
     
   tasks:
   - name: create ec2 instance
