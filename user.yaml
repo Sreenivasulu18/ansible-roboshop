@@ -21,7 +21,7 @@
       shell: /sbin/nologin
       home: /app
 
-  - name: deleting app directory
+  - name: remove app directory
     ansible.builtin.file:
       path: /app
       state: absent
@@ -31,7 +31,7 @@
       path: /app
       state: directory
 
-  - name: delete user file
+  - name: delete user application
     ansible.builtin.file:
       path: /tmp/user.zip
       state: absent
