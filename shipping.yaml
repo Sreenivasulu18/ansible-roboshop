@@ -10,9 +10,10 @@
     - maven
     - mysql
 
-  - name: Install mysql python libraries
+  - name: install mysql python libraries
     ansible.builtin.pip:
-      executable: "{{ item }}"
+      executable: pip3.9
+      name: "{{ item }}"
     loop:
     - cryptography
     - PyMySQL
